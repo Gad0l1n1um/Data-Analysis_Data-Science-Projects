@@ -1,0 +1,18 @@
+DATA ANALYSIS #1
+ANALYSIS: Understanding the IT field related to Data, including areas such as Data Analysis, Data Science, Database Development, Database Administration, Database Architecture, Data Engineering, and Data Warehousing. The goal is to explore the software tools, programming languages, and career paths within these fields.
+
+Additionally, this analysis will cover the career trajectories of individuals in these roles, examining salary, work-life balance, work environment, and benefits. We will classify individuals by gender, age, country/region to provide insights for prospective employees making career decisions.
+
+GOAL: Clean data from Excel or other sources in Power BI using Power Query Editor. This involves transforming unclean data into properly formatted data, addressing errors, gaps, spaces, repetitions, and duplicates. Tables will be merged when necessary, identifying one-to-one or one-to-many relationships based on column IDs or similar columns.
+
+CHALLENGES:
+
+Multiple Entries in Fields: Columns like programming languages contain multiple entries (e.g., "Python, SQL") instead of a single value. Similarly, job role columns list multiple roles/skills (e.g., "Data Analyst, Data Engineer").
+
+Inconsistent Naming: Variations in job titles (e.g., "Database Eng" vs. "Database Engineer") make the data non-uniform and require standardization or separation.
+
+SOLUTION: Use a comma delimiter to separate multiple entries within the same cell and ignore repeated entries. This standardization will ensure clean data for further analysis.
+
+TOOLS: Excel, Power BI, Power Query Editor
+
+CREDIT: Alex the Analyst
