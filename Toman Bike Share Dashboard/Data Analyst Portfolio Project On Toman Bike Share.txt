@@ -1,0 +1,235 @@
+OUR DATA ANALYSIS WORKFLOW
+___________________________
+
+1. Create a Database
+
+2. Develop SQL Queries
+
+3. Connect Power BI to DB
+
+4. Build a Dashboard in Power BI
+
+5. Answer the Analysis Question
+
+-----------------------------------------------------------------------------------
+
+EMAIL REQUESTS
+_______________
+
+Request for Development of Toman Bike Share Dashboard
+
+Dear Data Analyst
+
+We need your expertise to develop a dashboard for "Toman Bike Share" that displays our key performance metrics for informed
+decision-making.
+
+Requirements:
+- Hourly Revenue Analysis
+
+- Profit and Revenue Trends:
+ - Seasonal Revenue
+
+- Rider Demographics
+
+Design and Aesthetics: Use our company colors and ensure the dashboard is easy to navigate.
+
+Data Source: Access to our database will be provided. If no database, please create one
+
+Deadline: We need a preliminary version ASAP.
+
+Please provide an estimated timeline for completion and recommendation on raising prices next year.
+
+Best Regards.
+
+
+------------------------------------------------------------------------------------------------------------
+
+SQL SERVER NAME : 
+
+
+SQL QUERY DEVELOPED FOR POWER BI VISUALIZATION:
+_________________________________________________
+WITH cte AS (
+    SELECT * FROM bike_share_yr_0
+    UNION ALL
+    SELECT * FROM bike_share_yr_1
+)
+SELECT 
+dteday,
+season,
+a.yr,
+weekday,
+hr,
+rider_type,
+riders,
+price,
+COGS,
+riders*price as revenue,
+riders*price - COGS as profit
+FROM cte a 
+Left Join cost_table b
+On a.yr = b.yr
+
+---------------------------------------------------------------------------------------
+
+ICONS USED IN POWER BI
+______________________
+
+1. Go to Flaticon
+
+2. Search for icon type
+
+3. Download
+
+4. Go to online png tools
+
+5. Import from downloads folder
+
+6. Change color from black to white if necessary
+
+7. Download into downloads folder
+
+8. Go to Power Bi then to insert 0 images and import into Power Bi
+
+
+
+------------------------------------------------------------------------------
+
+Recommendation for rasing price next year.
+__________________________________________
+
+Average price of 2022 = 4.99
+
+Average price of 2021 = 3.99
+
+Difference	      = 1
+
+Divided by price of 2022 = 1/3.99 = 0.2506265664160401 = 25% increase from previous year.
+
+------------------------------------------------
+
+Analyze the difference in demand 
+
+Patronage in 2022 = 2049576 
+
+Patronage in 2021 = 1243103
+
+Difference        = 806473
+
+Percentage Increase = 806473 / 1243103 = 0.6487579870694544 = 65% Increase in demand from previous year.
+
+--------------------------------------------------------------------------------------
+
+For every 25% price increase we get 65% increase in demand.
+
+So Price Elasticity = 65/25 = 2.6.
+
+------------------------------------------------------------------------------
+
+RECOMMENDATION
+______________
+
+Conservative Increase: Considering thesubstantial increase last year, a more conservative increase
+might be prudent to avoid hitting a price ceiling where demand starts to drop. An increase in the range
+of 10-15% could test the market's response without risking a significant loss of customers.
+
+Price Setting:
+	- If the price in 2022 was $4.99, a 10% increase would make the new price about $5.49.
+	- A 15% increase would set the price at approximately $5.74
+
+Recommended Strategy:
+
+Market Analysis: Conduct further market research to understand customer satisfaction, potential competitive
+changes, and the overall economic environment. This can guide whether leaning towards the lower or higher
+end of the suggestive increase.
+
+Segmented Pricing Strategy: Consider different pricing for casual versus registered users, as they may have
+different price sensitivities.
+
+Monitor and Adjust: Implement the new prices but be ready to adjust based on immediate customer feedback and
+sales data. Monitoring closely will allow you to fine-tune your pricing strategy without committing fully to 
+a price that might turn out to be too high.
+
+
+CREDITS : Flaticon, AbsentData
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
